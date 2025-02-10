@@ -1,0 +1,43 @@
+.hearts-background {
+    position: fixed;        /* Fixed position so it stays in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;   /* Allow clicks to pass through */
+    overflow: hidden;
+    z-index: -1;            /* Ensure it's behind your main content */
+  }
+  
+  .heart {
+    position: absolute;
+    bottom: -50px; /* Starting position; adjust if needed */
+    width: 40px;   /* Set width as needed */
+    height: 40px;  /* Set height as needed */
+    background-image: url('assets/heart.png'); /* Your heart image */
+    background-size: contain;    /* Scale the image to ensure the whole image is visible */
+    background-repeat: no-repeat;/* Prevent tiling */
+    background-position: center; /* Center the image within the container */
+    opacity: 0;
+    animation: moveHeart linear infinite;
+  }
+  
+  /* Keyframes for moving the heart from the bottom to the top */
+  @keyframes moveHeart {
+    0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-50vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-110vh) scale(0.5);
+      opacity: 0;
+    }
+  }
+  

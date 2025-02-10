@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ffe6e6;
+  text-align: center;
+}
+
+.home,
+.suggestions {
+  padding-top: 100px;
+}
+
+h1 {
+  color: #d6336c;
+}
+
+.button-container {
+  position: relative;
+  height: 300px;
+  margin: 20px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suggestions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.suggestions li {
+  margin: 8px 0;
+}
+
+.full-screen-container {
+  position: relative; /* establishes a positioning context for absolute children */
+  width: 100vw;       /* full viewport width */
+  height: 100vh;      /* full viewport height */
+  overflow: hidden;   /* hide any content that might overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  align-items: center;     /* center horizontally */
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #d6336c;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #a11d4a;
+}
+
+.header-image {
+  width: 150px;      /* Adjust width as needed */
+  display: block;
+  margin: 20px auto; /* Center the image horizontally and add spacing */
+}
