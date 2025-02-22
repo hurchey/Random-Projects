@@ -82,10 +82,6 @@ curl -X POST -d '{"url": "https://www.example.com"}' -H "Content-Type: applicati
 * **Custom Short Codes:** Allow users to specify custom short codes
 * **Error Handling:** Enhance error responses and logging for production use
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
 ### How to Use This README
